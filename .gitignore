@@ -1,0 +1,6 @@
+/tmp/
+/bin/
+phpunit.xml.dist
+phpcs.ruleset.xml
+/tests/bootstrap.php
+/tests/test-sample.php
