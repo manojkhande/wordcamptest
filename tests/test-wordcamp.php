@@ -35,4 +35,9 @@ class SampleTest extends WP_UnitTestCase {
 		$this->assertTrue( post_type_exists( 'book' ) );
 	}
 
+	public function test_wordcamp_filter_content(){
+		$content = $this->DefaultContent->wordcamp_filter_content('Hello World');
+		$this->assertEquals('Hello World<p>This is added to the bottom of all post and page content.</p>',$content);
+	}
+
 }

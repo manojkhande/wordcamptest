@@ -20,11 +20,17 @@ class DefaultContent{
     }
 
     function register_book_post_type() {
-	    
+	    $args = array(
+	      'public' => true,
+	      'label'  => 'Books'
+	    );
+	    register_post_type( 'book', $args );
 	}
 
 	function wordcamp_filter_content($content) {
-		
+		$new_content = '<p>This is added to the bottom of all post and page content.</p>';
+		$content .= $new_content;	
+		return $content;
 	}
 	
 }
