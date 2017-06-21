@@ -2,5 +2,6 @@
 /bin/
 phpunit.xml.dist
 phpcs.ruleset.xml
+.travis.yml
 /tests/bootstrap.php
 /tests/test-sample.php
